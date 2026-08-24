@@ -13,7 +13,7 @@ const News = ({className}) => {
             const data = await fetchNews();
             setNews(data.articles);
         })()
-    },[]) // runs only once after jsx is initially rendered 
+    },[]) 
 
     if(loading) return <Loader />
 
